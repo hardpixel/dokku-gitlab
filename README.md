@@ -1,5 +1,5 @@
-Dokku GitLab CE
-===============
+Dokku GitLab
+============
 
 Instructions for installing [GitLab](https://gitlab.com) as a [Dokku](http://dokku.viewdocs.io/dokku) application, using the official [GitLab CE](https://hub.docker.com/_/gitlab-community-edition) Docker image.
 
@@ -39,7 +39,7 @@ dokku docker-options:add gitlab deploy '-p 2222:22'
 Edit configuration
 ------------------
 
-Edit or add `gitlab.rb` in `/home/storage/gitlab/data` and add the following settings:
+Create `gitlab.rb` in `/home/storage/gitlab/data` and add the following settings:
 
 ```ruby
 # GitLab URL
