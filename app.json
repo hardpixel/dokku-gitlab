@@ -1,0 +1,8 @@
+{
+  "name": "gitlab-ce",
+  "description": "Gitlab CE based on the Omnibus GitLab package",
+  "keywords": [
+    "dokku",
+    "gitlab"
+  ]
+}

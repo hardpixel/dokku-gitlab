@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  web:
+    image: "dokku/gitlab-ce"
+    build:
+      context: .
+    ports:
+      - "8080:80"
+      - "2222:22"
