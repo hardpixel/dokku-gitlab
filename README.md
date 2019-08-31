@@ -57,6 +57,19 @@ nginx['listen_port'] = 80
 nginx['listen_https'] = false
 ```
 
+Deploy application
+------------------
+
+Clone this repository and push it to your dokku server:
+
+```
+git clone https://github.com/hardpixel/dokku-gitlab.git
+cd dokku-gitlab
+
+git remote add dokku dokku@example.com:gitlab
+git push dokku master
+```
+
 Enable SSL
 ----------
 
