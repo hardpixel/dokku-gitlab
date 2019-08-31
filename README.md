@@ -92,14 +92,15 @@ Host gitlab.example.com
 Reconfigure GitLab
 ------------------
 
-Using `dokku run` does not work. Enter dokku application prompt:
+Connect to the gitlab app container:
 
 ```
 dokku enter gitlab
-```
-
-Run reconfigure on application prompt:
-
-```
 gitlab-ctl reconfigure
+```
+
+Or run the command from outside the app container:
+
+```
+dokku run gitlab gitlab-ctl reconfigure
 ```
