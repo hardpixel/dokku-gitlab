@@ -104,3 +104,14 @@ Or run the command from outside the app container:
 ```
 dokku run gitlab gitlab-ctl reconfigure
 ```
+
+Update GitLab
+-------------
+
+Before updating you have to stop the running container or the update will fail.
+
+```
+dokku ps:stop gitlab
+docker pull gitlab/gitlab-ce
+dokku ps:rebuild gitlab
+```
