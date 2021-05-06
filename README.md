@@ -39,7 +39,7 @@ dokku docker-options:add gitlab deploy '-p 2222:22'
 Edit configuration
 ------------------
 
-Create `gitlab.rb` in `/home/storage/gitlab/data` and add the following settings:
+Create `gitlab.rb` in `/home/storage/gitlab/config` and add the following settings:
 
 ```ruby
 # GitLab URL
